@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-6^rf01*bh!h^ucz1e&g(y21o*pn*+h%mq&@-&5dx(ofu&tsfl1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['122.248.192.233']
 
 
 # Application definition
@@ -98,13 +98,12 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "myParking",
-        "USER" : "root",
-        "PASSWORD": "o/g6C_TNT9GacVv?1=l/r`N8-6*1S8",
-        "HOST": "localhost",
+        "USER" : "admin",
+        "PASSWORD": "DAjCjeCsjckolfJcbkY2",
+        "HOST": "coemobilitydb.cpks4sm0udv9.ap-southeast-1.rds.amazonaws.com",
         "PORT": 3306,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -140,6 +139,7 @@ USE_I18N = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "static/"
+# Remove this already since we dont input user data through this server
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"
@@ -157,6 +157,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
-
 
 CORS_ALLOW_ALL_ORIGINS = True
