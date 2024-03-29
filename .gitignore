@@ -1,0 +1,11 @@
+.vscode
+virt
+*.txt
+!requirements.txt
+Redis
+client
+db.sqlite3
+
+__pycache__
+*.pyc
+media/
