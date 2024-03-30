@@ -23,3 +23,5 @@ def trial(sender, instance, created, **kwargs):
                 "action": action,
                 "date":crossing_time,
             }})
+    
+    print("Sending event")
