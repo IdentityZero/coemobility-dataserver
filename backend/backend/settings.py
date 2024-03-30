@@ -86,6 +86,9 @@ TEMPLATES = [
 WSGI_APPLICATION = "backend.wsgi.application"
 ASGI_APPLICATION = "backend.asgi.application"
 EVENTSTREAM_ALLOW_ORIGINS = ['*']
+CORS_ALLOWED_ORIGINS = [
+    '*',
+]
 
 # EVENTSTREAM_ALLOW_ORIGINS = ['http://192.168.100.144:8002',
 #     'http://192.168.100.144:8000',]
@@ -159,5 +162,3 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
-
-CORS_ALLOW_ALL_ORIGINS = True
