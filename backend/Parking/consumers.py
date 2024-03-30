@@ -81,6 +81,7 @@ class ParkingConsumer(WebsocketConsumer):
                 "action": response["status"],
                 "date":datetime,
             }})
+            print("Sending event")
 
         except VehicleRFID.DoesNotExist:
             response["exist"] = False
