@@ -1,6 +1,7 @@
 .vscode
 virt
 *.txt
+*.log
 !requirements.txt
 Redis
 client
