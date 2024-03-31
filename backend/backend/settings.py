@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-6^rf01*bh!h^ucz1e&g(y21o*pn*+h%mq&@-&5dx(ofu&tsfl1
 DEBUG = True
 
 # Added localhost
-ALLOWED_HOSTS = ['122.248.192.233', 'localhost']
+ALLOWED_HOSTS = ['122.248.192.233', 'localhost', 'coemobility.com']
 
 
 # Application definition
