@@ -87,10 +87,10 @@ WSGI_APPLICATION = "backend.wsgi.application"
 ASGI_APPLICATION = "backend.asgi.application"
 EVENTSTREAM_ALLOW_ORIGINS = ['*']
 CORS_ALLOWED_ORIGINS = [
-    'http://122.248.192.233',
     'https://122.248.192.233',
-    'http://localhost',
-    'http://coemobility.com',
+    'https://122.248.192.233',
+    'https://localhost',
+    'https://coemobility.com',
 ]
 
 
