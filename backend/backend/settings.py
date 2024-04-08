@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-6^rf01*bh!h^ucz1e&g(y21o*pn*+h%mq&@-&5dx(ofu&tsfl1
 DEBUG = True
 
 # Added localhost
-ALLOWED_HOSTS = ['localhost', 'coemobility.com']
+ALLOWED_HOSTS = ['47.129.54.22','localhost', 'coemobility.com']
 
 
 # Application definition
@@ -87,6 +87,7 @@ WSGI_APPLICATION = "backend.wsgi.application"
 ASGI_APPLICATION = "backend.asgi.application"
 EVENTSTREAM_ALLOW_ORIGINS = ['*']
 CORS_ALLOWED_ORIGINS = [
+    'https://47.129.54.22',
     'https://localhost',
     'https://coemobility.com',
 ]
