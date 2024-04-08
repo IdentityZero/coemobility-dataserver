@@ -88,6 +88,7 @@ ASGI_APPLICATION = "backend.asgi.application"
 EVENTSTREAM_ALLOW_ORIGINS = ['*']
 CORS_ALLOWED_ORIGINS = [
     'https://47.129.54.22:8001',
+    'http://47.129.54.22:8001',
     'https://localhost',
     'https://coemobility.com',
 ]
