@@ -2,7 +2,7 @@ import os
 import json
 from .base import *
 
-with open('/etc/backend_config.json') as config_file:
+with open('/etc/backend_config.json', 'r') as config_file:
     config = json.load(config_file)
 
 SECRET_KEY = config['SECRET_KEY']
