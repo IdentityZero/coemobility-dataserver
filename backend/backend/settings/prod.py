@@ -6,7 +6,7 @@ with open('/etc/backend_config.json', 'r') as config_file:
     config = json.load(config_file)
 
 SECRET_KEY = config['SECRET_KEY']
-DEBUG = True
+DEBUG = False
 
 # Added localhost
 ALLOWED_HOSTS = ['122.248.192.233', 'localhost', 'coemobility.com']
