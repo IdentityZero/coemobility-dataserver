@@ -1,8 +1,12 @@
 import os
+import json
 from .base import *
 
-SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
-DEBUG = False
+with open('/etc/backend_config.json') as config_file:
+    config = json.load(config_file)
+
+SECRET_KEY = config['SECRET_KEY']
+DEBUG = True
 
 # Added localhost
 ALLOWED_HOSTS = ['122.248.192.233', 'localhost', 'coemobility.com']
@@ -18,10 +22,10 @@ CORS_ALLOWED_ORIGINS = [
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "myParking",
-        "USER" : "admin",
-        "PASSWORD": "DAjCjeCsjckolfJcbkY2",
-        "HOST": "coemobilitydb.cpks4sm0udv9.ap-southeast-1.rds.amazonaws.com",
+        "NAME": config["DB_NAME"],
+        "USER" : config["DB_USER"],
+        "PASSWORD": config["DB_PASSWORD"],
+        "HOST": config["DB_HOST"],
         "PORT": 3306,
     }
 }
