@@ -100,6 +100,7 @@ class CoveredParkingAPIView(APIView):
 
     def post(self,request):
         data = request.POST
+        print(data)
 
         area = data['area']
         id_area = data['id_area']
