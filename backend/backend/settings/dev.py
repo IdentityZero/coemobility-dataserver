@@ -7,9 +7,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost']
 
 EVENTSTREAM_ALLOW_ORIGINS = ['*']
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost',
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 DATABASES = {
     "default": {
