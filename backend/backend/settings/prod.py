@@ -20,6 +20,8 @@ CORS_ALLOWED_ORIGINS = [
     'https://coemobility.com',
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://coemobility.com']
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
