@@ -22,4 +22,6 @@ class ProfileColumn(admin.ModelAdmin):
     
     def lastname(self, instance):
         return instance.user.last_name
+    
 admin.site.register(models.Profile, ProfileColumn)
+admin.site.site_header = 'Coemobility - Vehicle Identification and Parking Space Monitoring System'
