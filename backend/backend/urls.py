@@ -24,6 +24,7 @@ urlpatterns = [
     path("parking/", include("Parking.urls")),
     path("api/", include("Api.urls")),
     path("webapi/", include("WebAPI.urls")),
+    path("chats/", include("Chat.urls")),
 ]
 
 if settings.DEBUG:

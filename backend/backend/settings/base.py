@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "Parking",
     "Api",
     "WebAPI",
+    "Chat",
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 7  # Number of items per page
+}
